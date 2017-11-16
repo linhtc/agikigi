@@ -60,6 +60,7 @@ ets_timer_legacy.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -84,7 +85,6 @@ ets_timer_legacy.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./esp_timer_impl.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
@@ -207,6 +207,8 @@ ets_timer_legacy.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h:
@@ -254,8 +256,6 @@ ets_timer_legacy.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./esp_timer_impl.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./ets_timer_legacy.c:

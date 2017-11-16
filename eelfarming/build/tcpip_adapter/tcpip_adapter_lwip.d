@@ -95,6 +95,7 @@ tcpip_adapter_lwip.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -332,6 +333,8 @@ tcpip_adapter_lwip.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 

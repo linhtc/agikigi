@@ -63,6 +63,7 @@ pm_esp32.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -91,7 +92,6 @@ pm_esp32.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/xtensa_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/core-macros.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./pm_impl.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./pm_trace.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./esp_timer_impl.h
 
@@ -221,6 +221,8 @@ pm_esp32.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h:
@@ -276,8 +278,6 @@ pm_esp32.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/core-macros.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./pm_impl.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./pm_trace.h:
 

@@ -58,6 +58,7 @@ bt.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_system.h \
@@ -214,6 +215,8 @@ bt.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 

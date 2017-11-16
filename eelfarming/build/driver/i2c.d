@@ -61,13 +61,14 @@ i2c.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_err.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_system.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_err.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_sleep.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/gpio.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
@@ -220,6 +221,10 @@ i2c.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_err.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h:
@@ -231,8 +236,6 @@ i2c.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_system.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_err.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_sleep.h:
 

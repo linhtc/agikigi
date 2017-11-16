@@ -39,6 +39,7 @@ emac_main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/emac_ex_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/emac_reg_v2.h \
@@ -101,6 +102,7 @@ emac_main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -125,7 +127,6 @@ emac_main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/ethernet/include/esp_eth.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_pm.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp32/pm.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/ethernet/./emac_common.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/ethernet/./emac_dev.h \
@@ -211,6 +212,8 @@ emac_main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
 
@@ -336,6 +339,8 @@ emac_main.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_timer.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/esp_heap_caps.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/heap/include/multi_heap.h:
@@ -383,8 +388,6 @@ emac_main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_pm.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp32/pm.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
 
