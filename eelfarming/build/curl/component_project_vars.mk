@@ -4,4 +4,4 @@ COMPONENT_LDFLAGS += -L$(BUILD_DIR_BASE)/curl -lcurl
 COMPONENT_LINKER_DEPS += 
 COMPONENT_SUBMODULES += 
 COMPONENT_LIBRARIES += curl
-curl-build: 
+component-curl-build: 
