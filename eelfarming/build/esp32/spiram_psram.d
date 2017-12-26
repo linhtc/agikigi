@@ -57,7 +57,8 @@ spiram_psram.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/spi_common.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/lldesc.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/build/include/sdkconfig.h:
 
@@ -174,4 +175,6 @@ spiram_psram.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/lldesc.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./spiram_psram.c:

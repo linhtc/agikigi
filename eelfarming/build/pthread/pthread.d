@@ -37,6 +37,7 @@ pthread.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/alloca.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/assert.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_attr.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -89,7 +90,6 @@ pthread.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/pthread/./pthread_internal.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h
@@ -167,6 +167,8 @@ pthread.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/assert.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_attr.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -271,8 +273,6 @@ pthread.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/pthread/./pthread_internal.h:
 

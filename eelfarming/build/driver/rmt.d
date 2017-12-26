@@ -80,6 +80,7 @@ rmt.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rmt_struct.h \
@@ -249,6 +250,8 @@ rmt.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h:
 

@@ -88,7 +88,7 @@ bt.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/core-macros.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_task.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_phy_init.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bt/include/bt.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bt/include/esp_bt.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_pm.h \
@@ -276,7 +276,7 @@ bt.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_phy_init.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bt/include/bt.h:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bt/include/esp_bt.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h:
 

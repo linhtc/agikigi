@@ -82,6 +82,10 @@ int_wdt.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_int_wdt.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/build/include/sdkconfig.h:
@@ -247,6 +251,14 @@ int_wdt.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_int_wdt.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./int_wdt.c:

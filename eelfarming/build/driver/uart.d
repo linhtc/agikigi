@@ -88,6 +88,7 @@ uart.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
@@ -95,7 +96,6 @@ uart.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/uart.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/uart_channel.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
@@ -274,6 +274,8 @@ uart.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h:
@@ -287,8 +289,6 @@ uart.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/./uart.c:

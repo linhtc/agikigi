@@ -87,16 +87,13 @@ i2c.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/event_groups.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/timers.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/i2c_struct.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/i2c_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/i2c.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
@@ -273,11 +270,7 @@ i2c.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/event_groups.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/timers.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
 
@@ -290,8 +283,6 @@ i2c.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/i2c_reg.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/i2c.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/./i2c.c:

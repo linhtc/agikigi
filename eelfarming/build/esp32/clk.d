@@ -45,20 +45,21 @@ clk.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/rtc.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/i2s_reg.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_err.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdio.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/core-macros.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/tie.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/tie.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include/bootloader_clock.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdint.h:
 
@@ -150,12 +151,6 @@ clk.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h:
-
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/i2s_reg.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
@@ -165,6 +160,12 @@ clk.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdio.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/core-macros.h:
 
@@ -177,4 +178,6 @@ clk.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core-matmap.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/tie.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include/bootloader_clock.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./clk.c:

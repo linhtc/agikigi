@@ -90,6 +90,10 @@ task_wdt.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_task_wdt.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdint.h:
@@ -271,6 +275,14 @@ task_wdt.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_dport_access.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_task_wdt.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/./task_wdt.c:

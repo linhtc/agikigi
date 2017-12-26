@@ -97,6 +97,7 @@ spi_master.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
@@ -292,6 +293,8 @@ spi_master.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/ringbuf.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/periph_ctrl.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/./spi_master.c:

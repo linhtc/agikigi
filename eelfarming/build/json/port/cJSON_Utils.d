@@ -24,6 +24,7 @@ port/cJSON_Utils.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/types.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/sched.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/port/include/cJSON_Utils.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h
 
@@ -74,6 +75,8 @@ port/cJSON_Utils.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/sched.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/port/include/cJSON_Utils.h:
 

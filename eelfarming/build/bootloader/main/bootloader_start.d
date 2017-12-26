@@ -44,6 +44,7 @@ bootloader_start.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include_priv/bootloader_random.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader/subproject/main/./bootloader_config.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include/bootloader_clock.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader/subproject/main/./flash_qio_mode.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_attr.h:
@@ -133,6 +134,8 @@ bootloader_start.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include_priv/bootloader_random.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader/subproject/main/./bootloader_config.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader_support/include/bootloader_clock.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader/subproject/main/./flash_qio_mode.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/bootloader/subproject/main/./bootloader_start.c:
