@@ -134,10 +134,7 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./WebSocket_Task.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
 
@@ -408,10 +405,4 @@ main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/timer.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./main.c:
