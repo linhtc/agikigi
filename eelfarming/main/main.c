@@ -25,6 +25,12 @@
 
 #include "freertos/queue.h"
 
+/*Include temperature lib*/
+#include "ds18b20.h"
+
+/*Define temperature pin*/
+const int DS_PIN = 14;
+
 /* The examples use simple WiFi configuration that you can set via
    'make menuconfig'.
    If you'd rather not, just change the below entries to strings with
@@ -139,10 +145,20 @@ static void waiting_req(void *pvParameters)
     }
 }
 
+static void temperature(void *pvParameters)
+{
+	ds18b20_init(DS_PIN);
+	while (1) {
+	    printf("Temperature: %0.1f\n", ds18b20_get_temp());
+	    vTaskDelay(1000 / portTICK_PERIOD_MS);
+	  }
+}
+
 void app_main()
 {
     ESP_ERROR_CHECK( nvs_flash_init() );
     initialise_wifi();
     xTaskCreate(&ws_server, "ws_server", 2048, NULL, 4, NULL);
     xTaskCreatePinnedToCore(&waiting_req, "waiting_req", 2048, NULL, 5, NULL, 1);
+    xTaskCreatePinnedToCore(&temperature, "mainTask", 2048, NULL, 5, NULL, 0);
 }

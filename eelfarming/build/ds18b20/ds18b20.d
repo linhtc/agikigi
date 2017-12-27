@@ -1,21 +1,17 @@
-main.o: \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./main.c \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h \
+ds18b20.o: \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/./ds18b20.c \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/reent.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/newlib.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/config.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/ieeefp.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/features.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/reent.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/_types.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/_types.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/_default_types.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/lock.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/cdefs.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/string.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdint.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -31,6 +27,8 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/corebits.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdlib.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/cdefs.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/alloca.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -79,65 +77,11 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/event_groups.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/timers.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_types.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_interface.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_event.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_types.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/time.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/time.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/unistd.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/unistd.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/time.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/fcntl.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/_default_fcntl.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stat.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/vfs/include/sys/ioctl.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_task.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/errno.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/errno.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_event_loop.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/nvs_flash/include/nvs_flash.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/nvs_flash/include/nvs.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/inet.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./WebSocket_Task.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/include/ds18b20.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/reent.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h:
 
@@ -151,10 +95,6 @@ main.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core-isa.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/reent.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h:
-
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/_types.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/_types.h:
@@ -162,12 +102,6 @@ main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/_default_types.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/lock.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/cdefs.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/string.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdint.h:
 
@@ -198,6 +132,10 @@ main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdlib.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/_ansi.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/cdefs.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/stdlib.h:
 
@@ -296,116 +234,4 @@ main.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/limits.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/list.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/event_groups.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/timers.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_interface.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_event.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/opt.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/time.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/machine/time.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/unistd.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/unistd.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/time.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/fcntl.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/_default_fcntl.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/stat.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/vfs/include/sys/ioctl.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_task.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/debug.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/arch.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/errno.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/errno.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_event_loop.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/log/include/esp_log_internal.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/nvs_flash/include/nvs_flash.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/nvs_flash/include/nvs.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/inet.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./WebSocket_Task.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/include/ds18b20.h:
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./main.c:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/./ds18b20.c:
