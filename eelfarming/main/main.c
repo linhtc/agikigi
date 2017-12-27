@@ -172,7 +172,7 @@ static void temperature(void *pvParameters)
 	while (1) {
 	    printf("Temperature: %0.1f\n", ds18b20_get_temp());
 	    vTaskDelay(1000 / portTICK_PERIOD_MS);
-	  }
+	}
 }
 
 /*
