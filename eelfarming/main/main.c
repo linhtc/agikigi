@@ -55,6 +55,10 @@ static const char *TAG = "example";
 //WebSocket frame receive queue
 QueueHandle_t WebSocket_rx_queue;
 
+/*
+ * Event handler
+ *
+ * */
 static esp_err_t event_handler(void *ctx, system_event_t *event)
 {
     switch(event->event_id) {
@@ -76,6 +80,10 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
     return ESP_OK;
 }
 
+/*
+ * Setup wifi
+ *
+ * */
 static void initialise_wifi(void)
 {
     tcpip_adapter_init();
@@ -96,6 +104,10 @@ static void initialise_wifi(void)
     ESP_ERROR_CHECK( esp_wifi_start() );
 }
 
+/*
+ * Queue of web socket
+ *
+ * */
 static void waiting_req(void *pvParameters)
 {
     //frame buffer
@@ -148,6 +160,12 @@ static void waiting_req(void *pvParameters)
     }
 }
 
+/*
+ * Read temperature
+ * Sensor DS18B20 waterproof
+ * GPIO 14
+ *
+ * */
 static void temperature(void *pvParameters)
 {
 	ds18b20_init(DS_PIN);
@@ -157,6 +175,11 @@ static void temperature(void *pvParameters)
 	  }
 }
 
+/*
+ * Main function
+ * Pin tasks to core 0, 1
+ *
+ * */
 void app_main()
 {
     ESP_ERROR_CHECK( nvs_flash_init() );
