@@ -131,7 +131,7 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./WebSocket_Task.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h \
@@ -399,7 +399,7 @@ main.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./WebSocket_Task.h:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h:
 

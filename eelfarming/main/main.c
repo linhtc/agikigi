@@ -21,7 +21,10 @@
 #include "lwip/dns.h"
 
 #include "cJSON.h"
-#include "WebSocket_Task.h"
+//#include "WebSocket_Task.h"
+
+/*Add websocket lib*/
+#include "websocket.h"
 
 #include "freertos/queue.h"
 
