@@ -60,7 +60,7 @@ typedef enum {
 	WS_OP_PON = 0xa 				/*!< Pong Frame*/
 } WS_OPCODES;
 
-//reference to the RX queue
+//Reference to the RX queue
 extern QueueHandle_t WebSocket_rx_queue;
 
 //Reference to open websocket connection
