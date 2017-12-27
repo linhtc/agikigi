@@ -8,31 +8,31 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
+#include "freertos/queue.h"
 #include "esp_system.h"
 #include "esp_wifi.h"
 #include "esp_event_loop.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
-
 #include "lwip/err.h"
 #include "lwip/sockets.h"
 #include "lwip/sys.h"
 #include "lwip/netdb.h"
 #include "lwip/dns.h"
-
 #include "cJSON.h"
-//#include "WebSocket_Task.h"
 
 /*Add websocket lib*/
 #include "websocket.h"
-
-#include "freertos/queue.h"
 
 /*Include temperature lib*/
 #include "ds18b20.h"
 
 /*Define temperature pin*/
 const int DS_PIN = 14;
+
+/*Define ultrasonic sensor pin*/
+const int HC_TRIG = 18;
+const int HC_ECHO = 19;
 
 /* The examples use simple WiFi configuration that you can set via
    'make menuconfig'.
@@ -54,6 +54,13 @@ static const char *TAG = "example";
 
 //WebSocket frame receive queue
 QueueHandle_t WebSocket_rx_queue;
+
+/*Temperature storage*/
+float VAR_TEMPERATURE = 0;
+
+/*Distance storage*/
+double VAR_DISTANCE = 0;
+struct timeval tv = { .tv_sec = 0, .tv_usec = 0 };
 
 /*
  * Event handler
@@ -105,6 +112,18 @@ static void initialise_wifi(void)
 }
 
 /*
+ * Setup ultrasonic sensor
+ *
+ * */
+static void initialise_ultrasonic(void)
+{
+	gpio_pad_select_gpio(HC_TRIG);
+	gpio_pad_select_gpio(HC_ECHO);
+	gpio_set_direction(HC_TRIG, GPIO_MODE_OUTPUT);
+	gpio_set_direction(HC_ECHO, GPIO_MODE_INPUT);
+}
+
+/*
  * Queue of web socket
  *
  * */
@@ -136,6 +155,14 @@ static void waiting_req(void *pvParameters)
 					switch (cmd->valueint){ // 0 => ack, 1 -> info, 2 set ssid, 3 control pin
 						case 0:{
 							cJSON_AddNumberToObject(response, "status", 1);
+							break;
+						}
+						case 1:{ /*Get temperature*/
+							cJSON_AddNumberToObject(response, "temperature", VAR_TEMPERATURE);
+							break;
+						}
+						case 2:{ /*Get distance*/
+							cJSON_AddNumberToObject(response, "distance", VAR_DISTANCE);
 							break;
 						}
 						default:{
@@ -170,8 +197,49 @@ static void temperature(void *pvParameters)
 {
 	ds18b20_init(DS_PIN);
 	while (1) {
-	    printf("Temperature: %0.1f\n", ds18b20_get_temp());
+		VAR_TEMPERATURE = ds18b20_get_temp();
+	    printf("Temperature: %0.1f\n", VAR_TEMPERATURE);
 	    vTaskDelay(1000 / portTICK_PERIOD_MS);
+	}
+}
+
+/*
+ * Read distance from ultrasonic sensor
+ * Sensor HC SR04
+ * GPIO 18 -> trigger
+ * GPIO 19 -> echo
+ *
+ * */
+static void distance(void *pvParameters)
+{
+	while (1) {
+		bool has_echo = false;
+		gpio_set_level(HC_TRIG, 1);
+		ets_delay_us(100);
+		gpio_set_level(HC_TRIG, 0);
+		gettimeofday(&tv, NULL);
+		uint32_t startTime = tv.tv_usec;
+		// Wait for echo to go high and THEN start the time
+		while (gpio_get_level(HC_ECHO) == 0 && gettimeofday(&tv, NULL) && (tv.tv_usec - startTime) < 500 * 1000) {
+			// Do nothing;
+		}
+		gettimeofday(&tv, NULL);
+		startTime = tv.tv_usec;
+		while (gpio_get_level(HC_ECHO) == 1 && gettimeofday(&tv, NULL) && (tv.tv_usec - startTime) < 500 * 1000) {
+			has_echo = true;
+		}
+		if (gpio_get_level(HC_ECHO) == 0 && has_echo) {
+			gettimeofday(&tv, NULL);
+			uint32_t diff = tv.tv_usec - startTime; // Diff time in uSecs
+			// Distance is TimeEchoInSeconds * SpeedOfSound / 2
+			VAR_DISTANCE  = 340.29 * diff / (1000 * 1000 * 2); // Distance in meters
+			printf("Distance is %f cm\n", VAR_DISTANCE * 100);
+		} else {
+			// No value
+			printf("Distance: n/a\n");
+		}
+		// Delay and re run.
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
 
@@ -184,7 +252,9 @@ void app_main()
 {
     ESP_ERROR_CHECK( nvs_flash_init() );
     initialise_wifi();
+    initialise_ultrasonic();
     xTaskCreate(&ws_server, "ws_server", 2048, NULL, 4, NULL);
     xTaskCreatePinnedToCore(&waiting_req, "waiting_req", 2048, NULL, 5, NULL, 1);
-    xTaskCreatePinnedToCore(&temperature, "mainTask", 2048, NULL, 5, NULL, 0);
+    xTaskCreatePinnedToCore(&temperature, "temperature", 2048, NULL, 5, NULL, 0);
+    xTaskCreatePinnedToCore(&distance, "distance", 2048, NULL, 5, NULL, 0);
 }

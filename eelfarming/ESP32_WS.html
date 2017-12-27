@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ESP32 WebSocket Test</title>
+    <title>WebSocket</title>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
 	
@@ -27,7 +27,7 @@
 			WebSocket_connection.onopen = function(){
 			  $('#WebSocket_State').html('<input type="text" id="websocket_message" value="..."/><a href=\"javascript:WebSocketSend()\">send WebSocket</a>');
 		     // $("#websocket_message").val(JSON.stringify({ps:18,req:1}));
-			  $("#websocket_message").val(JSON.stringify({ssid:"MOBILE STAR WiFi",pw:"mobiist@r2017"}));
+			  $("#websocket_message").val(JSON.stringify({"cmd":1}));
 			  
 			  $('#WebSocket_State').append('|<a href=\"javascript:WebSocketSend(1)\">ON</a>|');
 			  $('#WebSocket_State').append('<a href=\"javascript:WebSocketSend(0)\">OFF</a>');

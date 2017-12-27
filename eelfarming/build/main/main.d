@@ -83,8 +83,8 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/event_groups.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/timers.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_interface.h \
@@ -303,9 +303,9 @@ main.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/task.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h:
-
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_wifi.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/queue.h:
 
