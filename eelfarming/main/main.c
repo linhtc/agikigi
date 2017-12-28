@@ -252,7 +252,7 @@ static void do_meter(void *pvParameters)
 
 /*
  * Main function
- * Pin tasks to core 0, 1
+ * Pin tasks to core (0, 1)
  *
  * */
 void app_main()
