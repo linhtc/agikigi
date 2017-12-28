@@ -242,7 +242,7 @@ static void ph_meter(void *pvParameters)
  * */
 static void do_meter(void *pvParameters)
 {
-	ph20_init(ADC1_CHANNEL_3, ADC_WIDTH_MAX, ADC_ATTEN_DB_11);
+	do37_init(ADC1_CHANNEL_3, ADC_WIDTH_MAX, ADC_ATTEN_DB_11);
 	while (1) {
 		VAR_DO = do37_get_meter();
 		printf("DO: %0.1f mg/l\n", VAR_DO);
