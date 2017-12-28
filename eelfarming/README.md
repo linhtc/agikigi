@@ -1,5 +1,4 @@
-# Switch project
+# Asian Swamp Eel Feeding Automation Project
 
-Connect device to AP and control via phone.
-Basically for fun for life.
-But it work very well :D
+Visit: http://agikigi.com
+Email: leon@agikigi.com
