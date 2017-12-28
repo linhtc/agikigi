@@ -20,6 +20,7 @@
 #include "lwip/netdb.h"
 #include "lwip/dns.h"
 #include "cJSON.h"
+#include "driver/adc.h"
 
 /*Add websocket lib*/
 #include "websocket.h"
@@ -30,6 +31,12 @@
 /*Include ultrasonic lib*/
 #include "hcsr04.h"
 
+/*Include ph lib*/
+#include "ph20.h"
+
+/*Include dissolved oxygen lib*/
+#include "do37.h"
+
 /*Define temperature pin and storage*/
 const int DS_PIN = 14;
 float VAR_TEMPERATURE = 0;
@@ -38,6 +45,12 @@ float VAR_TEMPERATURE = 0;
 const int HC_TRIG = 18;
 const int HC_ECHO = 19;
 double VAR_DISTANCE = 0;
+
+/*Define PH sensor pin and storage*/
+double VAR_PH = 0;
+
+/*Define DO sensor pin and storage*/
+double VAR_DO = 0;
 
 /* The examples use simple WiFi configuration that you can set via
    'make menuconfig'.
@@ -155,12 +168,11 @@ static void waiting_req(void *pvParameters)
 							cJSON_AddNumberToObject(response, "status", 1);
 							break;
 						}
-						case 1:{ /*Get temperature*/
-							cJSON_AddNumberToObject(response, "temperature", VAR_TEMPERATURE);
-							break;
-						}
-						case 2:{ /*Get distance*/
-							cJSON_AddNumberToObject(response, "distance", VAR_DISTANCE);
+						case 1:{ /*Get water meter*/
+							cJSON_AddNumberToObject(response, "te_m", VAR_TEMPERATURE); /*Temperature meter*/
+							cJSON_AddNumberToObject(response, "di_m", VAR_DISTANCE); /*Distance meter*/
+							cJSON_AddNumberToObject(response, "ph_m", VAR_PH); /*PH meter*/
+							cJSON_AddNumberToObject(response, "do_m", VAR_DO); /*DO meter*/
 							break;
 						}
 						default:{
@@ -219,6 +231,38 @@ static void distance(void *pvParameters)
 }
 
 /*
+ * Read ph from ph sensor
+ * Sensor PH 2.0
+ * GPIO 36 -> ADC1_CHANNEL_0 -> DB_11 3.3v
+ *
+ * */
+static void ph_meter(void *pvParameters)
+{
+	ph20_init(ADC1_CHANNEL_0, ADC_WIDTH_MAX, ADC_ATTEN_DB_11);
+	while (1) {
+		VAR_PH = ph20_get_meter();
+		printf("PH: %0.1f U\n", VAR_PH);
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
+	}
+}
+
+/*
+ * Read dissolved oxygen from do sensor
+ * Sensor DO
+ * GPIO 39 -> ADC1_CHANNEL_3 -> DB_11 3.3v
+ *
+ * */
+static void do_meter(void *pvParameters)
+{
+	ph20_init(ADC1_CHANNEL_3, ADC_WIDTH_MAX, ADC_ATTEN_DB_11);
+	while (1) {
+		VAR_DO = do37_get_meter();
+		printf("DO: %0.1f mg/l\n", VAR_DO);
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
+	}
+}
+
+/*
  * Main function
  * Pin tasks to core 0, 1
  *
@@ -232,4 +276,6 @@ void app_main()
     xTaskCreatePinnedToCore(&waiting_req, "waiting_req", 2048, NULL, 5, NULL, 1);
     xTaskCreatePinnedToCore(&temperature, "temperature", 2048, NULL, 5, NULL, 0);
     xTaskCreatePinnedToCore(&distance, "distance", 2048, NULL, 5, NULL, 0);
+    xTaskCreatePinnedToCore(&ph_meter, "ph_meter", 2048, NULL, 5, NULL, 0);
+    xTaskCreatePinnedToCore(&do_meter, "do_meter", 2048, NULL, 5, NULL, 0);
 }
