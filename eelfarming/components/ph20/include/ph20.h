@@ -15,8 +15,8 @@
 #ifndef PH20_H_
 #define PH20_H_
 
-float ph20_calibrate(int VOLTAGE);
+float ph20_calibrate(uint32_t VOLTAGE);
 float ph20_get_meter(void);
-void ph20_init(int CHANNEL, int WIDTH, int ATTEN_DB);
+void ph20_init(uint32_t CHANNEL, uint32_t WIDTH, uint32_t ATTEN_DB);
 
 #endif

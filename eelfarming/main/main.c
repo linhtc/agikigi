@@ -44,13 +44,13 @@ float VAR_TEMPERATURE = 0;
 /*Define ultrasonic sensor pin and storage*/
 const int HC_TRIG = 18;
 const int HC_ECHO = 19;
-double VAR_DISTANCE = 0;
+float VAR_DISTANCE = 0;
 
 /*Define PH sensor pin and storage*/
-double VAR_PH = 0;
+float VAR_PH = 0;
 
 /*Define DO sensor pin and storage*/
-double VAR_DO = 0;
+float VAR_DO = 0;
 
 /* The examples use simple WiFi configuration that you can set via
    'make menuconfig'.

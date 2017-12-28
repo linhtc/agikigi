@@ -57,7 +57,8 @@ ph20.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/adc.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/adc_channel.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/esp_system.h:
 
@@ -174,4 +175,6 @@ ph20.o: \
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/driver/include/driver/adc.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/soc/esp32/include/soc/adc_channel.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ph20/./ph20.c:

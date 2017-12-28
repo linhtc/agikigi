@@ -15,23 +15,25 @@
 #include "esp_system.h"
 #include "driver/gpio.h"
 #include "driver/adc.h"
+#include "esp_adc_cal.h"
 
-int PH_CHANNEL;
+int DO_CHANNEL;
 int do_init = 0;
+esp_adc_cal_characteristics_t do_characteristics;
 
 // calibrate voltage to ph value
-float do37_calibrate(int voltage){
-	float ph = 0;
-	if (voltage >= 0 && voltage < 50){
-		ph = 8;
+float do37_calibrate(uint32_t voltage){
+	float val = 0;
+	if (voltage > 0 && voltage < 50){
+		val = 8;
 	}
 	if (voltage >= 50 && voltage < 100){
-		ph = 9;
+		val = 9;
 	}
 	if (voltage >= 100){
-		ph = 10;
+		val = 10;
 	}
-	return ph;
+	return val;
 }
 
 // Returns ph meter from sensor
@@ -39,16 +41,18 @@ float do37_get_meter(void) {
 	if(do_init != 1){
 		return 0;
 	}
-	int voltage = adc1_get_raw(PH_CHANNEL);
+	//int voltage = adc1_get_raw(DO_CHANNEL);
+	uint32_t voltage = adc1_to_voltage(DO_CHANNEL, &do_characteristics);
 	return do37_calibrate(voltage);
 }
 
 // Use adc1
-void do37_init(int CHANNEL, int WIDTH, int ATTEN_DB){
-	PH_CHANNEL = CHANNEL;
-	gpio_pad_select_gpio(PH_CHANNEL);
-	gpio_set_direction(PH_CHANNEL, GPIO_MODE_INPUT);
+void do37_init(uint32_t CHANNEL, uint32_t WIDTH, uint32_t ATTEN_DB){
+	DO_CHANNEL = CHANNEL;
+	gpio_pad_select_gpio(DO_CHANNEL);
+	gpio_set_direction(DO_CHANNEL, GPIO_MODE_INPUT);
 	adc1_config_width(WIDTH);
-	adc1_config_channel_atten(PH_CHANNEL, ATTEN_DB);
+	adc1_config_channel_atten(DO_CHANNEL, ATTEN_DB);
+	esp_adc_cal_get_characteristics(3300, ATTEN_DB, WIDTH, &do_characteristics);
 	do_init = 1;
 }

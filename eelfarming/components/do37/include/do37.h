@@ -15,8 +15,8 @@
 #ifndef DO37_H_
 #define DO37_H_
 
-float do37_calibrate(int VOLTAGE);
+float do37_calibrate(uint32_t VOLTAGE);
 float do37_get_meter(void);
-void do37_init(int CHANNEL, int WIDTH, int ATTEN_DB);
+void do37_init(uint32_t CHANNEL, uint32_t WIDTH, uint32_t ATTEN_DB);
 
 #endif

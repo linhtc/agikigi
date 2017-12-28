@@ -15,14 +15,16 @@
 #include "esp_system.h"
 #include "driver/gpio.h"
 #include "driver/adc.h"
+#include "esp_adc_cal.h"
 
 int PH_CHANNEL;
 int ph_init = 0;
+esp_adc_cal_characteristics_t ph_characteristics;
 
 // calibrate voltage to ph value
-float ph20_calibrate(int voltage){
+float ph20_calibrate(uint32_t voltage){
 	float ph = 0;
-	if (voltage >= 0 && voltage < 50){
+	if (voltage > 0 && voltage < 50){
 		ph = 8;
 	}
 	if (voltage >= 50 && voltage < 100){
@@ -39,7 +41,8 @@ float ph20_get_meter(void) {
 	if(ph_init != 1){
 		return 0;
 	}
-	int voltage = adc1_get_raw(PH_CHANNEL);
+	//int voltage = adc1_get_raw(PH_CHANNEL);
+	uint32_t voltage = adc1_to_voltage(PH_CHANNEL, &ph_characteristics);
 	return ph20_calibrate(voltage);
 }
 
@@ -50,5 +53,6 @@ void ph20_init(int CHANNEL, int WIDTH, int ATTEN_DB){
 	gpio_set_direction(PH_CHANNEL, GPIO_MODE_INPUT);
 	adc1_config_width(WIDTH);
 	adc1_config_channel_atten(PH_CHANNEL, ATTEN_DB);
+	esp_adc_cal_get_characteristics(3300, ATTEN_DB, WIDTH, &ph_characteristics);
 	ph_init = 1;
 }
