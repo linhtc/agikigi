@@ -123,18 +123,6 @@ static void initialise_wifi(void)
 }
 
 /*
- * Setup ultrasonic sensor
- *
- * */
-static void initialise_ultrasonic(void)
-{
-	gpio_pad_select_gpio(HC_TRIG);
-	gpio_pad_select_gpio(HC_ECHO);
-	gpio_set_direction(HC_TRIG, GPIO_MODE_OUTPUT);
-	gpio_set_direction(HC_ECHO, GPIO_MODE_INPUT);
-}
-
-/*
  * Queue of web socket
  *
  * */
@@ -271,7 +259,6 @@ void app_main()
 {
     ESP_ERROR_CHECK( nvs_flash_init() );
     initialise_wifi();
-    initialise_ultrasonic();
     xTaskCreate(&ws_server, "ws_server", 2048, NULL, 4, NULL);
     xTaskCreatePinnedToCore(&waiting_req, "waiting_req", 2048, NULL, 5, NULL, 1);
     xTaskCreatePinnedToCore(&temperature, "temperature", 2048, NULL, 5, NULL, 0);
