@@ -132,10 +132,8 @@ main.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/json/include/cJSON.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/include/ds18b20.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/include/ds18b20.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/hcsr04/include/hcsr04.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h:
 
@@ -401,11 +399,7 @@ main.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h:
-
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/ds18b20/include/ds18b20.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/hcsr04/include/hcsr04.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/main/./main.c:

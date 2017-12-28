@@ -1,7 +1,7 @@
 websocket.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/./websocket.c \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/opt.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/stdlib.h \
@@ -102,27 +102,27 @@ websocket.o: \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/hwcrypto/sha.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/sha.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/wpa_supplicant/include/wpa2/utils/base64.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/string.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/newlib/include/sys/string.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/inet.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h \
  /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h \
- /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h \
+ /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/include/websocket.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h:
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/opt.h:
 
@@ -324,22 +324,6 @@ websocket.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
 
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/err.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
-
-/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h:
-
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/hwcrypto/sha.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/esp32/include/rom/sha.h:
@@ -352,9 +336,25 @@ websocket.o: \
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
 
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/def.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
+
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/inet.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/sys.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netdb.h:
 
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/dns.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/api.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/netbuf.h:
+
+/home/leon/Documents/WorkSpace/Espressif/esp-idf/components/lwip/include/lwip/lwip/pbuf.h:
 /home/leon/Documents/WorkSpace/Espressif/esp-idf/examples/agikigi/eelfarming/components/websocket/./websocket.c:

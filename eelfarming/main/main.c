@@ -27,12 +27,17 @@
 /*Include temperature lib*/
 #include "ds18b20.h"
 
-/*Define temperature pin*/
-const int DS_PIN = 14;
+/*Include ultrasonic lib*/
+#include "hcsr04.h"
 
-/*Define ultrasonic sensor pin*/
+/*Define temperature pin and storage*/
+const int DS_PIN = 14;
+float VAR_TEMPERATURE = 0;
+
+/*Define ultrasonic sensor pin and storage*/
 const int HC_TRIG = 18;
 const int HC_ECHO = 19;
+double VAR_DISTANCE = 0;
 
 /* The examples use simple WiFi configuration that you can set via
    'make menuconfig'.
@@ -54,13 +59,6 @@ static const char *TAG = "example";
 
 //WebSocket frame receive queue
 QueueHandle_t WebSocket_rx_queue;
-
-/*Temperature storage*/
-float VAR_TEMPERATURE = 0;
-
-/*Distance storage*/
-double VAR_DISTANCE = 0;
-struct timeval tv = { .tv_sec = 0, .tv_usec = 0 };
 
 /*
  * Event handler
@@ -140,7 +138,7 @@ static void waiting_req(void *pvParameters)
            event group.
         */
         xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
-//        ESP_LOGI(TAG, "Connected to AP");
+        //ESP_LOGI(TAG, "Connected to AP");
 
         if(xQueueReceive(WebSocket_rx_queue,&__RX_frame, 3*portTICK_PERIOD_MS)==pdTRUE){
 			//write frame inforamtion to UART
@@ -198,7 +196,7 @@ static void temperature(void *pvParameters)
 	ds18b20_init(DS_PIN);
 	while (1) {
 		VAR_TEMPERATURE = ds18b20_get_temp();
-	    printf("Temperature: %0.1f\n", VAR_TEMPERATURE);
+	    printf("Temperature: %0.1f C\n", VAR_TEMPERATURE);
 	    vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
@@ -212,33 +210,10 @@ static void temperature(void *pvParameters)
  * */
 static void distance(void *pvParameters)
 {
+	hcsr04_init(HC_TRIG, HC_ECHO);
 	while (1) {
-		bool has_echo = false;
-		gpio_set_level(HC_TRIG, 1);
-		ets_delay_us(100);
-		gpio_set_level(HC_TRIG, 0);
-		gettimeofday(&tv, NULL);
-		uint32_t startTime = tv.tv_usec;
-		// Wait for echo to go high and THEN start the time
-		while (gpio_get_level(HC_ECHO) == 0 && gettimeofday(&tv, NULL) && (tv.tv_usec - startTime) < 500 * 1000) {
-			// Do nothing;
-		}
-		gettimeofday(&tv, NULL);
-		startTime = tv.tv_usec;
-		while (gpio_get_level(HC_ECHO) == 1 && gettimeofday(&tv, NULL) && (tv.tv_usec - startTime) < 500 * 1000) {
-			has_echo = true;
-		}
-		if (gpio_get_level(HC_ECHO) == 0 && has_echo) {
-			gettimeofday(&tv, NULL);
-			uint32_t diff = tv.tv_usec - startTime; // Diff time in uSecs
-			// Distance is TimeEchoInSeconds * SpeedOfSound / 2
-			VAR_DISTANCE  = 340.29 * diff / (1000 * 1000 * 2); // Distance in meters
-			printf("Distance is %f cm\n", VAR_DISTANCE * 100);
-		} else {
-			// No value
-			printf("Distance: n/a\n");
-		}
-		// Delay and re run.
+		VAR_DISTANCE = hcsr04_get_distance();
+		printf("Distance: %0.1f Cm\n", VAR_DISTANCE);
 		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }

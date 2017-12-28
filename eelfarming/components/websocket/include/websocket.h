@@ -27,10 +27,9 @@
  */
 
 
-#ifndef	_WEBSOCKET_TASK_H_
-#define _WEBSOCKET_TASK_H_
+#ifndef	WEBSOCKET_H_
+#define WEBSOCKET_H_
 
-#include "lwip/api.h"
 #include <lwip/err.h>
 
 #define WS_MASK_L		0x4		/**< \brief Length of MASK field in WebSocket Header*/
@@ -50,7 +49,7 @@ typedef struct{
 	WS_frame_header_t	frame_header;
 	size_t				payload_length;
 	char*				payload;
-}WebSocket_frame_t;
+} WebSocket_frame_t;
 
 /**
  * \brief Send data to the websocket client
