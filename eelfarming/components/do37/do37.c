@@ -21,7 +21,7 @@ int DO_CHANNEL;
 int do_init = 0;
 esp_adc_cal_characteristics_t do_characteristics;
 
-// calibrate voltage to ph value
+// calibrate voltage to do value
 float do37_calibrate(uint32_t voltage){
 	float val = 0;
 	if (voltage > 0 && voltage < 50){
@@ -36,7 +36,7 @@ float do37_calibrate(uint32_t voltage){
 	return val;
 }
 
-// Returns ph meter from sensor
+// Returns do meter from sensor
 float do37_get_meter(void) {
 	if(do_init != 1){
 		return 0;
